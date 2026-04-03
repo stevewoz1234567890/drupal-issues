@@ -13,6 +13,7 @@ These drafts are ready to paste into [Drupal.org issue queues](https://www.drupa
 | 7 | `07-api-drupal-org-fastly-interstitial-firefox.md` | drupalorg / infra | Fastly interstitial loop on api.d.o (401 on `_fs-ch` POST); Firefox; mitigation change; help@ + HAR/IP |
 | 8 | `08-drupal-org-duplicate-change-record-deletion.md` | drupalorg / CR workflow | Duplicate CR after failed submit; staff removed dupe ([node/3576782](https://www.drupal.org/node/3576782)); doc/process template |
 | 9 | `09-git-drupalcode-org-gitlab-update-503.md` | drupalorg / infra | **503** on git.d.o during GitLab upgrade; ~10 min downtime possible; [#drupal-infrastructure](https://drupal.slack.com/archives/C51GNJG91/p1775153980583419) |
+| 10 | `10-ai-best-practices-project-drupal-docs-landscape.md` | ai_best_practices / handbook | Docs gap: overview has short AI Assistants blurb; **webchick** project = Agent Skills (Claude Code, OpenCode) |
 
 **Chat takeaways encoded above**
 
@@ -24,3 +25,4 @@ These drafts are ready to paste into [Drupal.org issue queues](https://www.drupa
 - **api.drupal.org / Fastly:** interstitial loop with **401** on challenge **POST** (`_fs-ch`…`/pat`); Firefox affected, Chrome often fine; share **IP**, **HAR**, **`_fs_ch_*`** cookies with **help@drupal.org**; timing near DDoS mitigation change; separate **5xx**/load-alert reports in chat.
 - **Change records:** duplicate node after **failed submit**; confirm **published** canonical vs dupe; **DA staff** can delete dupe (example resolved in Slack; nid **3576782** was the extra copy).
 - **git.drupalcode.org:** **503** / “no server available” during **GitLab** maintenance; staff announced minor upgrade with migrations—downtime **up to ~10 min**; see **#drupal-infrastructure** Slack ([example message](https://drupal.slack.com/archives/C51GNJG91/p1775153980583419)).
+- **AI + Drupal docs:** Handbook **Development tools overview** has a brief **Artificial Intelligence Assistants** section (e.g. Codeium)—not a full AI workflow guide. **[ai_best_practices](https://www.drupal.org/project/ai_best_practices)** ([webchick](https://www.drupal.org/u/webchick)): Agent Skills for **Claude Code** / **OpenCode** (modules, themes, config, hooks, plugins)—coordinate there to avoid duplicating a big new guide.
