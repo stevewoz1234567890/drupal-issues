@@ -11,6 +11,7 @@ These drafts are ready to paste into [Drupal.org issue queues](https://www.drupa
 | 5 | `05-mcp_server-contribution-coordination.md` | mcp_server | Roadmap/contributor visibility after sponsorship |
 | 6 | `06-ai_providers_api-contributors-and-positioning.md` | ai_providers_api | Positioning vs AI package; no black-box prompts; base-only; call for contributors |
 | 7 | `07-api-drupal-org-fastly-interstitial-firefox.md` | drupalorg / infra | Fastly interstitial loop on api.d.o (401 on `_fs-ch` POST); Firefox; mitigation change; help@ + HAR/IP |
+| 8 | `08-drupal-org-duplicate-change-record-deletion.md` | drupalorg / CR workflow | Duplicate CR after failed submit; staff removed dupe ([node/3576782](https://www.drupal.org/node/3576782)); doc/process template |
 
 **Chat takeaways encoded above**
 
@@ -20,3 +21,4 @@ These drafts are ready to paste into [Drupal.org issue queues](https://www.drupa
 - Sponsorship on **mcp_server** should be reflected in project visibility when appropriate.
 - **ai_providers_api:** explicit prompt ownership for integrators (no black box), lean base module, unfunded—document and invite contributors.
 - **api.drupal.org / Fastly:** interstitial loop with **401** on challenge **POST** (`_fs-ch`…`/pat`); Firefox affected, Chrome often fine; share **IP**, **HAR**, **`_fs_ch_*`** cookies with **help@drupal.org**; timing near DDoS mitigation change; separate **5xx**/load-alert reports in chat.
+- **Change records:** duplicate node after **failed submit**; confirm **published** canonical vs dupe; **DA staff** can delete dupe (example resolved in Slack; nid **3576782** was the extra copy).
