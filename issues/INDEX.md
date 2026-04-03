@@ -10,6 +10,7 @@ These drafts are ready to paste into [Drupal.org issue queues](https://www.drupa
 | 4 | `04-ai_agents_canvas-migrate-mcp-to-mcp_server.md` | ai_agents_canvas_direct_edit | Migrate custom MCP transport to mcp_server |
 | 5 | `05-mcp_server-contribution-coordination.md` | mcp_server | Roadmap/contributor visibility after sponsorship |
 | 6 | `06-ai_providers_api-contributors-and-positioning.md` | ai_providers_api | Positioning vs AI package; no black-box prompts; base-only; call for contributors |
+| 7 | `07-api-drupal-org-fastly-interstitial-firefox.md` | drupalorg / infra | Fastly interstitial loop on api.d.o (401 on `_fs-ch` POST); Firefox; mitigation change; help@ + HAR/IP |
 
 **Chat takeaways encoded above**
 
@@ -18,3 +19,4 @@ These drafts are ready to paste into [Drupal.org issue queues](https://www.drupa
 - **ai_agents_canvas_direct_edit** MCP pieces may move to **mcp_server**; Zivtech may contribute upstream.
 - Sponsorship on **mcp_server** should be reflected in project visibility when appropriate.
 - **ai_providers_api:** explicit prompt ownership for integrators (no black box), lean base module, unfunded—document and invite contributors.
+- **api.drupal.org / Fastly:** interstitial loop with **401** on challenge **POST** (`_fs-ch`…`/pat`); Firefox affected, Chrome often fine; share **IP**, **HAR**, **`_fs_ch_*`** cookies with **help@drupal.org**; timing near DDoS mitigation change; separate **5xx**/load-alert reports in chat.
