@@ -12,7 +12,7 @@
 
 **Polished, queue-ready issue drafts and curated community context** for the Drupal ecosystem—so decisions from Slack, IRC, and maintainer threads become **clear, actionable work** on [Drupal.org](https://www.drupal.org), not lost chat scrollback.
 
-This repository is a **public workflow**: versioned narratives, cross-linked topics, and a single index you can open when someone asks, *“What did we agree about mcp_server?”*, *“What was the Fastly / Firefox story on api.drupal.org?”*, or *“Why does everyone want a Drupal Laravel Boost?”*
+This repository is a **public workflow**: versioned narratives, cross-linked topics, and a single index you can open when someone asks, *“What did we agree about mcp_server?”*, *“What was the Fastly / Firefox story on api.drupal.org?”*, *“Why does everyone want a Drupal Laravel Boost?”*, or *“Why is my 2.x series not marked Supported on Drupal.org?”*
 
 It is **not** an official Drupal Association project—it's a disciplined notebook that happens to read like a **map of how serious Drupal practitioners think**.
 
@@ -51,7 +51,7 @@ Themes covered in [`issues/INDEX.md`](issues/INDEX.md) (full list and links live
 
 - **MCP & agents** — `mcp_server` accuracy and E2E testing, `mcp_remote` deprecation path, `ai_agents_canvas_direct_edit` migration, contribution coordination after sponsorship.
 - **AI module landscape** — `ai_providers_api` positioning, contributor expectations, and documentation gaps vs the **AI Best Practices** / Agent Skills effort (**Claude Code**, **OpenCode**). Community map: **Laravel Boost** comparisons → **Surge**, [AI Initiative #3541110](https://www.drupal.org/project/ai_initiative/issues/3541110), **ai_best_practices** (see [`community/laravel-boost-drupal-ecosystem-slack.md`](community/laravel-boost-drupal-ecosystem-slack.md)).
-- **Drupal.org & tooling** — `api.drupal.org` / Fastly interstitial behavior (e.g. Firefox), duplicate change records, `git.drupalcode.org` maintenance windows.
+- **Drupal.org & tooling** — `api.drupal.org` / Fastly interstitial behavior (e.g. Firefox), duplicate change records, `git.drupalcode.org` maintenance windows, **release series** / **Supported** checkbox semantics ([`community/drupalorg-release-series-supported-slack.md`](community/drupalorg-release-series-supported-slack.md), [infrastructure #3436596](https://www.drupal.org/project/project/issues/3436596)).
 
 Each numbered file is written to be **paste-ready** after project-specific edits.
 
@@ -65,8 +65,11 @@ Each numbered file is written to be **paste-ready** after project-specific edits
 | [`community/opentelemetry-1.0.0-beta7-release-context.md`](community/opentelemetry-1.0.0-beta7-release-context.md) | **OpenTelemetry** beta release — protobuf upgrade, CI unblock, log-format caveat |
 | [`community/em-dash-cms-chat.md`](community/em-dash-cms-chat.md) | Lightweight chat capture (naming, April 1 context)—**not** a product review |
 | [`community/laravel-boost-drupal-ecosystem-slack.md`](community/laravel-boost-drupal-ecosystem-slack.md) | **Laravel Boost** praise, **Surge**, **ai_best_practices**, [AI Initiative #3541110](https://www.drupal.org/project/ai_initiative/issues/3541110)—fragmentation → puzzle pieces |
+| [`community/drupalorg-release-series-supported-slack.md`](community/drupalorg-release-series-supported-slack.md) | **Supported** vs **`-dev`** / beta, **`2.0.*`** series label, [project #3436596](https://www.drupal.org/project/project/issues/3436596)—**drumm** / **penyaskito** |
 
 Use these when you need **citable paraphrases** without opening a full issue.
+
+Screenshots for select notes live under [`assets/`](assets/).
 
 ---
 
