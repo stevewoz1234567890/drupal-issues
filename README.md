@@ -12,7 +12,7 @@
 
 **Polished, queue-ready issue drafts and curated community context** for the Drupal ecosystem—so decisions from Slack, IRC, and maintainer threads become **clear, actionable work** on [Drupal.org](https://www.drupal.org), not lost chat scrollback.
 
-This repository is a **public workflow**: versioned narratives, cross-linked topics, and a single index you can open when someone asks, *“What did we agree about mcp_server?”*, *“What was the Fastly / Firefox story on api.drupal.org?”*, *“Why does everyone want a Drupal Laravel Boost?”*, *“Why is my 2.x series not marked Supported on Drupal.org?”*, *“Why did Chrome tests start failing on GitHub Actions?”*, or *“Where is the civicrm_entity MR for that autocomplete?”*
+This repository is a **public workflow**: versioned narratives, cross-linked topics, and a single index you can open when someone asks, *“What did we agree about mcp_server?”*, *“What was the Fastly / Firefox story on api.drupal.org?”*, *“Which Drupal module should I use to purge Cloudflare cache?”*, *“Why does everyone want a Drupal Laravel Boost?”*, *“Why is my 2.x series not marked Supported on Drupal.org?”*, *“Why did Chrome tests start failing on GitHub Actions?”*, or *“Where is the civicrm_entity MR for that autocomplete?”*
 
 It is **not** an official Drupal Association project—it's a disciplined notebook that happens to read like a **map of how serious Drupal practitioners think**.
 
@@ -53,7 +53,7 @@ Themes covered in [`issues/INDEX.md`](issues/INDEX.md) (full list and links live
 - **AI module landscape** — `ai_providers_api` positioning, contributor expectations, and documentation gaps vs the **AI Best Practices** / Agent Skills effort (**Claude Code**, **OpenCode**). Community map: **Laravel Boost** comparisons → **Surge**, [AI Initiative #3541110](https://www.drupal.org/project/ai_initiative/issues/3541110), **ai_best_practices** (see [`community/laravel-boost-drupal-ecosystem-slack.md`](community/laravel-boost-drupal-ecosystem-slack.md)).
 - **Drupal.org & tooling** — `api.drupal.org` / Fastly interstitial behavior (e.g. Firefox), duplicate change records, `git.drupalcode.org` maintenance windows, **release series** / **Supported** checkbox semantics ([`community/drupalorg-release-series-supported-slack.md`](community/drupalorg-release-series-supported-slack.md), [infrastructure #3436596](https://www.drupal.org/project/project/issues/3436596)).
 
-**Also in [`community/`](community/)** (not always one issue queue): **CI** runner changes vs **Chrome** / **Behat** ([`community/gha-ubuntu-chrome-behat-shmem-psa.md`](community/gha-ubuntu-chrome-behat-shmem-psa.md)); **contrib** branching and **core** constraints ([`community/same_page_preview-d11-2.1-3.0-slack.md`](community/same_page_preview-d11-2.1-3.0-slack.md)); **maintainer review** link bundles ([`community/civicrm_entity-3580224-review-nudge-slack.md`](community/civicrm_entity-3580224-review-nudge-slack.md)).
+**Also in [`community/`](community/)** (not always one issue queue): **Cloudflare** cache purge vs **purge** / **cloudflare_purge** ([`community/cloudflare-cache-purge-drupal-modules-slack.md`](community/cloudflare-cache-purge-drupal-modules-slack.md)); **CI** runner changes vs **Chrome** / **Behat** ([`community/gha-ubuntu-chrome-behat-shmem-psa.md`](community/gha-ubuntu-chrome-behat-shmem-psa.md)); **contrib** branching and **core** constraints ([`community/same_page_preview-d11-2.1-3.0-slack.md`](community/same_page_preview-d11-2.1-3.0-slack.md)); **maintainer review** link bundles ([`community/civicrm_entity-3580224-review-nudge-slack.md`](community/civicrm_entity-3580224-review-nudge-slack.md)).
 
 Each numbered file is written to be **paste-ready** after project-specific edits.
 
@@ -63,6 +63,7 @@ Each numbered file is written to be **paste-ready** after project-specific edits
 
 | File | Topic |
 |------|--------|
+| [`community/cloudflare-cache-purge-drupal-modules-slack.md`](community/cloudflare-cache-purge-drupal-modules-slack.md) | **Cloudflare** cache purge: **cloudflare** vs **purge** + **cloudflare_purge**; SDK meta [**#3572890**](https://www.drupal.org/project/cloudflare/issues/3572890) / [**#3362051**](https://www.drupal.org/project/cloudflare/issues/3362051) |
 | [`community/civicrm_entity-3580224-review-nudge-slack.md`](community/civicrm_entity-3580224-review-nudge-slack.md) | **civicrm_entity** **#3580224** (multilingual **Views** autocomplete); **MR !11** / **GitHub #546**; **`QueryHooks.php`** |
 | [`community/drupalorg-release-series-supported-slack.md`](community/drupalorg-release-series-supported-slack.md) | **Supported** vs **`-dev`** / beta, **`2.0.*`** series label, [project #3436596](https://www.drupal.org/project/project/issues/3436596)—**drumm** / **penyaskito** |
 | [`community/dxpr-builder-28-ai-release.md`](community/dxpr-builder-28-ai-release.md) | DXPR Builder **2.8** — AI + layout; summary for newsletters, Slack, or events |
