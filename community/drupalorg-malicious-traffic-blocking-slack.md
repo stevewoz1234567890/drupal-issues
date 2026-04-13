@@ -29,12 +29,26 @@
 - **nnewton** (later): **Not** **AI** or **AI scraping** for **this** event — **malicious** traffic (**edited** in original). (See **Scale** above for **volume** and **residential-proxy DDoS**.)
 - **Gábor Hojtsy:** If the post **helps higher-quality AI contribution**, he’s **glad**; he doubts people who want to **flood** d.o. would **learn how from his post**.
 
+## Follow-on: hours-long unavailability (same campaign, smarter pattern)
+
+**Context:** Thread opened with **Dries** asking whether **Drupal.org** had been **down ~1 hour** for others; reports stacked up quickly from **Europe** (e.g. **DrupalCamp Grenoble** **contribution day**) and elsewhere. **penyaskito** guessed **~3 hours** already. **godotislate** linked the prior **#drupal-infrastructure** note about **very abusive traffic** as a likely **continuation** of the **previous day’s** attack.
+
+| Role | Notes (paraphrased) |
+|------|---------------------|
+| **cmlara** | Attackers who **succeed** tend to **persist**; **defenders** often need to **ride out** impact so **legitimate users** barely **notice** downtime—**much harder** at **Drupal.org scale** than on smaller sites; surviving **5×–20×** traffic is **different** when baseline is **massive**. |
+| **Dries** | **Thanks** for confirmations. |
+| **penyaskito** | Service **back**, **thanks @drumm**. |
+| **nnewton** | **Thanks @drumm** and **Max** for carrying the load while they were **out**. **@cmlara** is **right**: last time **pattern-based** blocking worked; this wave looks like a **known class** of actor but **smarter** and **more generalized**. **WAF vendor** consulted—**idea** in flight—but **neither WAF** had **fully effective** blocks yet. **Capacity scaled** somewhat; **volume** still too high to **solve by scaling alone**. |
+
+**Slack (abusive traffic, Apr 10):** [drupal-infrastructure — “We are receiving some very abusive traffic”](https://drupal.slack.com/archives/C51GNJG91/p1775853371394709)
+
 ## Links (canonical)
 
 | Resource | URL |
 |----------|-----|
 | **Blog post** (Claude Code + d.o. issue workflow) | https://www.hojtsy.hu/blog/2026-apr-10/solving-small-drupal-issue-plenty-added-tests-most-basic-claude-code-setup-without |
+| **Slack** — abusive traffic (Apr 10, links to prior message in follow-on thread) | https://drupal.slack.com/archives/C51GNJG91/p1775853371394709 |
 
 ## Use
 
-**Citable context** when discussing **Drupal.org** under **attack traffic**, **edge blocking**, and **public AI tooling posts**: chat mixed **concern about volume** with an **in-thread correction** (**nnewton**) that a **given spike** was **malicious**, not **LLM scraping**; **Hojtsy** separated **good-faith AI contribution** from **flooding**. **drumm** / **nnewton** also **reassured** a contributor whose **personal bot** had **over-fetching** bugs: **paid proxy meshes** sit in a **different league** than **hobby automation**; recent attacks were described as **multiples of normal** (**5×–20×**) via **residential proxies**. This file is **not** a Drupal.org issue template (see `issues/` for those). For **PerimeterX** / **browser** challenges vs **Fastly** `/_fs-ch` on **api.d.o**, see [`issues/12-drupal-org-perimeterx-challenge-browsers.md`](../issues/12-drupal-org-perimeterx-challenge-browsers.md) and [`issues/07-api-drupal-org-fastly-interstitial-firefox.md`](../issues/07-api-drupal-org-fastly-interstitial-firefox.md).
+**Citable context** when discussing **Drupal.org** under **attack traffic**, **edge blocking**, and **public AI tooling posts**: chat mixed **concern about volume** with an **in-thread correction** (**nnewton**) that a **given spike** was **malicious**, not **LLM scraping**; **Hojtsy** separated **good-faith AI contribution** from **flooding**. **drumm** / **nnewton** also **reassured** a contributor whose **personal bot** had **over-fetching** bugs: **paid proxy meshes** sit in a **different league** than **hobby automation**; recent attacks were described as **multiples of normal** (**5×–20×**) via **residential proxies**. The **Follow-on** section captures a **later** window: **multi-hour** unavailability, **camp** contribution day impact, **staff** (**drumm**, **Max**, **nnewton**) on **WAF** limits and **scaling**. This file is **not** a Drupal.org issue template (see `issues/` for those). For **PerimeterX** / **browser** challenges vs **Fastly** `/_fs-ch` on **api.d.o**, see [`issues/12-drupal-org-perimeterx-challenge-browsers.md`](../issues/12-drupal-org-perimeterx-challenge-browsers.md) and [`issues/07-api-drupal-org-fastly-interstitial-firefox.md`](../issues/07-api-drupal-org-fastly-interstitial-firefox.md).
