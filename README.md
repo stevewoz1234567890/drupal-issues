@@ -12,7 +12,7 @@
 
 **Polished, queue-ready issue drafts and curated community context** for the Drupal ecosystem—so decisions from Slack, IRC, and maintainer threads become **clear, actionable work** on [Drupal.org](https://www.drupal.org), not lost chat scrollback.
 
-This repository is a **public workflow**: versioned narratives, cross-linked topics, and a single index you can open when someone asks, *“What did we agree about mcp_server?”*, *“What was the Fastly / Firefox story on api.drupal.org?”*, *“Why am I blocked by PerimeterX on Drupal.org?”*, *“Where is `node_list` invalidated in core?”*, *“How do we do multi-tenant RAG with Search API?”*, *“Which Drupal module should I use to purge Cloudflare cache?”*, *“Why does everyone want a Drupal Laravel Boost?”*, *“Why is my 2.x series not marked Supported on Drupal.org?”*, *“Why did Chrome tests start failing on GitHub Actions?”*, *“Who maintains new_relic_rpm?”*, or *“Where is the civicrm_entity MR for that autocomplete?”*
+This repository is a **public workflow**: versioned narratives, cross-linked topics, and a single index you can open when someone asks, *“What did we agree about mcp_server?”*, *“What was the Fastly / Firefox story on api.drupal.org?”*, *“Why am I blocked by PerimeterX on Drupal.org?”*, *“Where is `node_list` invalidated in core?”*, *“How do we do multi-tenant RAG with Search API?”*, *“Which Drupal module should I use to purge Cloudflare cache?”*, *“Why does everyone want a Drupal Laravel Boost?”*, *“Why is my 2.x series not marked Supported on Drupal.org?”*, *“Why did Chrome tests start failing on GitHub Actions?”*, *“Who maintains new_relic_rpm?”*, *“Where is the civicrm_entity MR for that autocomplete?”*, *“What’s the process for a seeking-maintainer project namespace?”*, *“Why was a project page redirecting forever between www and new.drupal.org?”*, or *“What did Community Health say when an #ai thread escalated?”*
 
 It is **not** an official Drupal Association project—it's a disciplined notebook that happens to read like a **map of how serious Drupal practitioners think**.
 
@@ -26,9 +26,10 @@ Organizations rarely see *how* their partners work upstream. This repo is a wind
 |--------|-------------------|
 | **Upstream citizenship** | Issue text drafted for real project queues—respectful tone, reproducible problems, concrete next steps. |
 | **Modern Drupal + AI** | Active tracking of **MCP** consolidation (**mcp_server**, **mcp_remote**), **AI** / **ai_search** / **RAG** patterns, **AI providers** positioning, **agent tooling**, **Surge** / **Boost-shaped** DX, and the **AI Best Practices** initiative—not buzzwords, filed work. |
-| **Operational realism** | Notes on **Drupal.org infrastructure** (CDN / **Fastly**, **PerimeterX**, browser edge cases, GitLab maintenance, change-record workflow) and **hosted CI** (e.g. **GitHub Actions** runner images affecting **Chrome** / **Behat**) because production sites and pipelines depend on that glue. |
+| **Operational realism** | Notes on **Drupal.org infrastructure** (CDN / **Fastly**, **PerimeterX**, **`www` vs `new.drupal.org`** routing edge cases, browser quirks, GitLab maintenance, change-record workflow) and **hosted CI** (e.g. **GitHub Actions** runner images affecting **Chrome** / **Behat**) because production sites and pipelines depend on that glue. |
 | **Core and contrib reality** | **Cache API** / entity list tags, **controller** autowiring, **admin theme** tooling, and **maintainer capacity** on long-tail modules (e.g. observability integrations)—what docs often omit. |
 | **Release literacy** | Community-sourced context (e.g. **OpenTelemetry** semver tradeoffs, security-driven releases) that informs upgrade planning. |
+| **Community health** | When Slack threads spike: **CWG** / **Community Health** framing, **[Values & Principles](https://www.drupal.org/about/values-and-principles)**, and **constructive** escalation—so policy links survive the scrollback. |
 
 If you need **Drupal 10/11**, **contrib architecture**, **OAuth and API integrations**, **observability**, or **AI-assisted development done responsibly**, maintainers who **write issues before they rant** are the ones who **reduce your risk**.
 
@@ -39,7 +40,7 @@ If you need **Drupal 10/11**, **contrib architecture**, **OAuth and API integrat
 | Location | Purpose |
 |----------|---------|
 | [`issues/INDEX.md`](issues/INDEX.md) | Master table: target project, filename, one-line intent, and encoded chat takeaways |
-| [`issues/`](issues/) | Numbered drafts (`01-…` through `16-…`)—retitle, set component/priority, add `@mentions`, then file |
+| [`issues/`](issues/) | Numbered drafts (`01-…` through `19-…`)—retitle, set component/priority, add `@mentions`, then file |
 | [`community/`](community/) | Short-lived or multi-project context: releases, ecosystem news, chat paraphrases—not always one issue |
 
 **Before filing on Drupal.org:** align with each project's taxonomy, link real user profiles, and strip anything that was only for your own notes.
@@ -48,17 +49,18 @@ If you need **Drupal 10/11**, **contrib architecture**, **OAuth and API integrat
 
 ## Issue drafts at a glance
 
-Themes below map to **16** numbered files in [`issues/`](issues/). The authoritative table (targets, filenames, one-line intent, chat takeaways) is [`issues/INDEX.md`](issues/INDEX.md).
+Themes below map to **19** numbered files in [`issues/`](issues/). The authoritative table (targets, filenames, one-line intent, chat takeaways) is [`issues/INDEX.md`](issues/INDEX.md).
 
 | Range | Themes |
 |-------|--------|
 | **01–06** | **MCP & agents** — `mcp_server` accuracy and E2E testing, `mcp_remote` deprecation, `ai_agents_canvas_direct_edit` migration, contribution coordination, `ai_providers_api` positioning. |
-| **07–09, 12** | **Drupal.org & infra** — `api.drupal.org` / Fastly interstitial (Firefox), duplicate change records, `git.drupalcode.org` **503**, **PerimeterX** on login / **accounts.d.o** ([`issues/12-drupal-org-perimeterx-challenge-browsers.md`](issues/12-drupal-org-perimeterx-challenge-browsers.md)). |
+| **07–09, 12, 18** | **Drupal.org & infra** — `api.drupal.org` / Fastly interstitial (Firefox), duplicate change records, `git.drupalcode.org` **503**, **PerimeterX** on login / **accounts.d.o** ([`issues/12-drupal-org-perimeterx-challenge-browsers.md`](issues/12-drupal-org-perimeterx-challenge-browsers.md)), no public **status page** + [**#3372242**](https://www.drupal.org/project/infrastructure/issues/3372242) ([`issues/18-drupal-org-public-status-page-infrastructure-3372242.md`](issues/18-drupal-org-public-status-page-infrastructure-3372242.md)). |
 | **10** | **AI + handbook** — `ai_best_practices` / Agent Skills vs **Development tools overview** ([`issues/10-ai-best-practices-project-drupal-docs-landscape.md`](issues/10-ai-best-practices-project-drupal-docs-landscape.md)). |
 | **11** | **Admin themes** — [`theming_tools`](https://www.drupal.org/project/theming_tools) (non-production test modules; **Olivero** / **default_admin** context) ([`issues/11-theming-tools-admin-theme-development.md`](issues/11-theming-tools-admin-theme-development.md)). |
-| **13–14** | **Drupal core** — entity **list** cache tags ([`issues/13-entity-list-cache-tags-core-invalidation.md`](issues/13-entity-list-cache-tags-core-invalidation.md)); **controller** autowiring, change record **3395716** ([`issues/14-drupal-core-controller-autowiring.md`](issues/14-drupal-core-controller-autowiring.md)). |
+| **13–14, 19** | **Drupal core** — entity **list** cache tags ([`issues/13-entity-list-cache-tags-core-invalidation.md`](issues/13-entity-list-cache-tags-core-invalidation.md)); **controller** autowiring, change record **3395716** ([`issues/14-drupal-core-controller-autowiring.md`](issues/14-drupal-core-controller-autowiring.md)); **PHP 8.5** + Views **`FieldViewsDataProvider`** [**#3582171**](https://www.drupal.org/project/drupal/issues/3582171) ([`issues/19-drupal-core-3582171-php85-views-fieldviewsdata-test.md`](issues/19-drupal-core-3582171-php85-views-fieldviewsdata-test.md)). |
 | **15** | **Contrib maintainership** — [`new_relic_rpm`](https://www.drupal.org/project/new_relic_rpm) and [**#3360583**](https://www.drupal.org/project/new_relic_rpm/issues/3360583) ([`issues/15-new-relic-rpm-maintainer-capacity-3360583.md`](issues/15-new-relic-rpm-maintainer-capacity-3360583.md)). |
 | **16** | **Multi-tenant RAG** — **Search API** + **ai**, tenant filters, [**#3584010**](https://www.drupal.org/project/ai/issues/3584010) ([`issues/16-ai-rag-multi-tenancy-search-api-ragtool-3584010.md`](issues/16-ai-rag-multi-tenancy-search-api-ragtool-3584010.md)). |
+| **17** | **AI provider CLI + DDEV** — `ai_provider_cli` alpha, **ddev-cli-relay**, **Linux** / `host.docker.internal`, **`--print`** vs tools ([`issues/17-ai-provider-cli-alpha-ddev-relay-linux.md`](issues/17-ai-provider-cli-alpha-ddev-relay-linux.md)). |
 
 **Cross-cutting (community + issues)**
 
