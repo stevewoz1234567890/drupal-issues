@@ -40,7 +40,7 @@ If you need **Drupal 10/11**, **contrib architecture**, **OAuth and API integrat
 | Location | Purpose |
 |----------|---------|
 | [`issues/INDEX.md`](issues/INDEX.md) | Master table: target project, filename, one-line intent, and encoded chat takeaways |
-| [`issues/`](issues/) | Numbered drafts (`01-…` through `19-…`)—retitle, set component/priority, add `@mentions`, then file |
+| [`issues/`](issues/) | Numbered drafts (`01-…` through `21-…`)—retitle, set component/priority, add `@mentions`, then file |
 | [`community/`](community/) | Short-lived or multi-project context: releases, ecosystem news, chat paraphrases—not always one issue |
 
 **Before filing on Drupal.org:** align with each project's taxonomy, link real user profiles, and strip anything that was only for your own notes.
@@ -49,7 +49,7 @@ If you need **Drupal 10/11**, **contrib architecture**, **OAuth and API integrat
 
 ## Issue drafts at a glance
 
-Themes below map to **19** numbered files in [`issues/`](issues/). The authoritative table (targets, filenames, one-line intent, chat takeaways) is [`issues/INDEX.md`](issues/INDEX.md).
+Themes below map to **21** numbered files in [`issues/`](issues/). The authoritative table (targets, filenames, one-line intent, chat takeaways) is [`issues/INDEX.md`](issues/INDEX.md).
 
 | Range | Themes |
 |-------|--------|
@@ -57,8 +57,9 @@ Themes below map to **19** numbered files in [`issues/`](issues/). The authorita
 | **07–09, 12, 18** | **Drupal.org & infra** — `api.drupal.org` / Fastly interstitial (Firefox), duplicate change records, `git.drupalcode.org` **503**, **PerimeterX** on login / **accounts.d.o** ([`issues/12-drupal-org-perimeterx-challenge-browsers.md`](issues/12-drupal-org-perimeterx-challenge-browsers.md)), no public **status page** + [**#3372242**](https://www.drupal.org/project/infrastructure/issues/3372242) ([`issues/18-drupal-org-public-status-page-infrastructure-3372242.md`](issues/18-drupal-org-public-status-page-infrastructure-3372242.md)). |
 | **10** | **AI + handbook** — `ai_best_practices` / Agent Skills vs **Development tools overview** ([`issues/10-ai-best-practices-project-drupal-docs-landscape.md`](issues/10-ai-best-practices-project-drupal-docs-landscape.md)). |
 | **11** | **Admin themes** — [`theming_tools`](https://www.drupal.org/project/theming_tools) (non-production test modules; **Olivero** / **default_admin** context) ([`issues/11-theming-tools-admin-theme-development.md`](issues/11-theming-tools-admin-theme-development.md)). |
-| **13–14, 19** | **Drupal core** — entity **list** cache tags ([`issues/13-entity-list-cache-tags-core-invalidation.md`](issues/13-entity-list-cache-tags-core-invalidation.md)); **controller** autowiring, change record **3395716** ([`issues/14-drupal-core-controller-autowiring.md`](issues/14-drupal-core-controller-autowiring.md)); **PHP 8.5** + Views **`FieldViewsDataProvider`** [**#3582171**](https://www.drupal.org/project/drupal/issues/3582171) ([`issues/19-drupal-core-3582171-php85-views-fieldviewsdata-test.md`](issues/19-drupal-core-3582171-php85-views-fieldviewsdata-test.md)). |
+| **13–14, 19–20** | **Drupal core** — entity **list** cache tags ([`issues/13-entity-list-cache-tags-core-invalidation.md`](issues/13-entity-list-cache-tags-core-invalidation.md)); **controller** autowiring, change record **3395716** ([`issues/14-drupal-core-controller-autowiring.md`](issues/14-drupal-core-controller-autowiring.md)); **PHP 8.5** + Views **`FieldViewsDataProvider`** [**#3582171**](https://www.drupal.org/project/drupal/issues/3582171) ([`issues/19-drupal-core-3582171-php85-views-fieldviewsdata-test.md`](issues/19-drupal-core-3582171-php85-views-fieldviewsdata-test.md)); **ProxyBuilder** **`@see`** [**#3092424**](https://www.drupal.org/project/drupal/issues/3092424), fork **`main`** + **rebase** MR cleanup ([`issues/20-drupal-core-3092424-proxybuilder-fork-main-rebase.md`](issues/20-drupal-core-3092424-proxybuilder-fork-main-rebase.md)). |
 | **15** | **Contrib maintainership** — [`new_relic_rpm`](https://www.drupal.org/project/new_relic_rpm) and [**#3360583**](https://www.drupal.org/project/new_relic_rpm/issues/3360583) ([`issues/15-new-relic-rpm-maintainer-capacity-3360583.md`](issues/15-new-relic-rpm-maintainer-capacity-3360583.md)). |
+| **21** | **Scanner** — **image** field **alt**/**title** search [**#3584902**](https://www.drupal.org/project/scanner/issues/3584902), **WIP**, possible patterns for **body** summary in results ([`issues/21-scanner-3584902-image-field-alt-title-search.md`](issues/21-scanner-3584902-image-field-alt-title-search.md)). |
 | **16** | **Multi-tenant RAG** — **Search API** + **ai**, tenant filters, [**#3584010**](https://www.drupal.org/project/ai/issues/3584010) ([`issues/16-ai-rag-multi-tenancy-search-api-ragtool-3584010.md`](issues/16-ai-rag-multi-tenancy-search-api-ragtool-3584010.md)). |
 | **17** | **AI provider CLI + DDEV** — `ai_provider_cli` alpha, **ddev-cli-relay**, **Linux** / `host.docker.internal`, **`--print`** vs tools ([`issues/17-ai-provider-cli-alpha-ddev-relay-linux.md`](issues/17-ai-provider-cli-alpha-ddev-relay-linux.md)). |
 
@@ -68,9 +69,13 @@ Themes below map to **19** numbered files in [`issues/`](issues/). The authorita
 - **Drupal.org release semantics** — **Supported** vs **`-dev`**, series labels — [`community/drupalorg-release-series-supported-slack.md`](community/drupalorg-release-series-supported-slack.md), [infrastructure #3436596](https://www.drupal.org/project/project/issues/3436596).
 - **Seeking maintainer / namespace** — **process** + **maintainer outreach**; **~2 weeks** rule of thumb in chat (**verify** on d.o.); **friction by design**; **[annotations](https://www.drupal.org/project/annotations)** — [`community/drupalorg-seeking-maintainer-namespace-process-slack.md`](community/drupalorg-seeking-maintainer-namespace-process-slack.md).
 - **`www` ↔ `new` redirect loop** — **[usage_data](https://www.drupal.org/project/usage_data)**; **drumm** fixed **misconfiguration**; **usage** on **[new.drupal.org/…/usage/…](https://new.drupal.org/project/usage/usage_data)** — [`community/drupalorg-usage-data-www-new-redirect-loop-slack.md`](community/drupalorg-usage-data-www-new-redirect-loop-slack.md).
+- **new.drupal.org / Software page / social** — maintainer **proud** of module on **new** (public); **dww** **[Software](https://www.drupal.org/drupalorg/software)** link + **fine** to mention; [**#3584626**](https://www.drupal.org/project/drupalorg/issues/3584626) **update** stale page + **new** stack; **Mastodon** during **5xx**/**DDoS** (**mxr576**) — [`community/drupalorg-software-page-new-drupalorg-3584626-slack.md`](community/drupalorg-software-page-new-drupalorg-3584626-slack.md).
+- **Drupal.org 429 / Fastly** — **14 Apr 2026**: **429** + **54113**, **Varnish** (**HEL** PoP); **Antti**: **Fastly** **rate limiting**; **www** worse than **new**; **CI** **patch** fetch failures; **dimitriskr**: **back** — [`community/drupalorg-429-fastly-rate-limit-apr2026-slack.md`](community/drupalorg-429-fastly-rate-limit-apr2026-slack.md).
+- **Drupal.org Apr 2026 DDoS follow-through** — **git** **hook declined** / “Unable to contact Drupal.org”; **WAF**/**backend** instability windows (**nnewton**); **residential proxies**; **@drupalinfra** **caching** + **accounts** upgrade; **2FA** “recovery codes first” (**drumm**); **issue fork** **`main`** — [`community/drupalorg-ddos-waf-git-mastodon-accounts-apr2026-slack.md`](community/drupalorg-ddos-waf-git-mastodon-accounts-apr2026-slack.md).
 - **`#ai` Slack escalation** — **CWG** / **AmyJune** **Community Health** reminder + **[Values & Principles](https://www.drupal.org/about/values-and-principles#seek-first-to-understand-then-to-be-understood)** — [`community/drupal-slack-ai-channel-cwg-health-reminder.md`](community/drupal-slack-ai-channel-cwg-health-reminder.md).
+- **Drupal Slack / feedback etiquette** — **GitHub** link + “does this **qualify** for **DrupalCon**?” in **wrong** channel → **Jeremy Chinquist**: use **`#support`**, clarify ask; **sponsor** showcase vs **BoF**; [**actoolsDrupal**](https://github.com/actools-pl/actoolsDrupal) context — [`community/drupalcon-github-feedback-channel-support-slack.md`](community/drupalcon-github-feedback-channel-support-slack.md).
 
-**Also in [`community/`](community/)** (not always one issue queue): **Cloudflare** cache purge vs **purge** / **cloudflare_purge** ([`community/cloudflare-cache-purge-drupal-modules-slack.md`](community/cloudflare-cache-purge-drupal-modules-slack.md)); **CI** runner changes vs **Chrome** / **Behat** ([`community/gha-ubuntu-chrome-behat-shmem-psa.md`](community/gha-ubuntu-chrome-behat-shmem-psa.md)); **contrib** branching and **core** constraints ([`community/same_page_preview-d11-2.1-3.0-slack.md`](community/same_page_preview-d11-2.1-3.0-slack.md)); **maintainer review** link bundles ([`community/civicrm_entity-3580224-review-nudge-slack.md`](community/civicrm_entity-3580224-review-nudge-slack.md)); **mega menu** **`h2`/`h3` in `<nav>`** vs audits ([`community/mega-menu-nav-headings-a11y-slack.md`](community/mega-menu-nav-headings-a11y-slack.md)); **unpublished** nodes vs **bundle class** in preprocess ([`community/unpublished-node-bundle-class-slack.md`](community/unpublished-node-bundle-class-slack.md)); **malicious traffic** / **edge blocking** vs **AI** narrative, **scale** (**5×–20×**, **residential proxies**), **hobby bot** reassurance (**drumm** / **nnewton**) + [**Hojtsy** blog (Claude Code + d.o.)](https://www.hojtsy.hu/blog/2026-apr-10/solving-small-drupal-issue-plenty-added-tests-most-basic-claude-code-setup-without) ([`community/drupalorg-malicious-traffic-blocking-slack.md`](community/drupalorg-malicious-traffic-blocking-slack.md)); **seeking maintainer** / **namespace** handover ([`community/drupalorg-seeking-maintainer-namespace-process-slack.md`](community/drupalorg-seeking-maintainer-namespace-process-slack.md)); **`usage_data`** **`www`↔`new`** redirect loop ([`community/drupalorg-usage-data-www-new-redirect-loop-slack.md`](community/drupalorg-usage-data-www-new-redirect-loop-slack.md)); **`#ai`** **CWG** / **Community Health** reminder ([`community/drupal-slack-ai-channel-cwg-health-reminder.md`](community/drupal-slack-ai-channel-cwg-health-reminder.md)); **core** **child issues** [**#3529510**](https://www.drupal.org/project/drupal/issues/3529510), **`@see`** spacing [**#3578091**](https://www.drupal.org/project/drupal/issues/3578091), **autowire** map [**#3578361**](https://www.drupal.org/project/drupal/issues/3578361) / [**#3295751**](https://www.drupal.org/project/drupal/issues/3295751), **`contact_storage`** attributes vs uninstall [**#3039906**](https://www.drupal.org/project/contact_storage/issues/3039906) ([`community/drupal-core-child-issues-see-docblock-autowire-contact-storage-slack.md`](community/drupal-core-child-issues-see-docblock-autowire-contact-storage-slack.md)).
+**Also in [`community/`](community/)** (not always one issue queue): **Cloudflare** cache purge vs **purge** / **cloudflare_purge** ([`community/cloudflare-cache-purge-drupal-modules-slack.md`](community/cloudflare-cache-purge-drupal-modules-slack.md)); **new.drupal.org** **Software** page / **social** / [**#3584626**](https://www.drupal.org/project/drupalorg/issues/3584626) / **Mastodon** incidents ([`community/drupalorg-software-page-new-drupalorg-3584626-slack.md`](community/drupalorg-software-page-new-drupalorg-3584626-slack.md)); **cdxgen** / **CycloneDX** SBOM for **Drupal** + **Dependency-Track** ([`community/cdxgen-drupal-dependency-track-sbom.md`](community/cdxgen-drupal-dependency-track-sbom.md)); **CI** runner changes vs **Chrome** / **Behat** ([`community/gha-ubuntu-chrome-behat-shmem-psa.md`](community/gha-ubuntu-chrome-behat-shmem-psa.md)); **contrib** branching and **core** constraints ([`community/same_page_preview-d11-2.1-3.0-slack.md`](community/same_page_preview-d11-2.1-3.0-slack.md)); **maintainer review** link bundles ([`community/civicrm_entity-3580224-review-nudge-slack.md`](community/civicrm_entity-3580224-review-nudge-slack.md)); **mega menu** **`h2`/`h3` in `<nav>`** vs audits ([`community/mega-menu-nav-headings-a11y-slack.md`](community/mega-menu-nav-headings-a11y-slack.md)); **node_revision_delete** **2.1.0-rc1** — **multilingual** revision safety + **entity query** perf ([`community/node_revision_delete-2.1.0-rc1-release.md`](community/node_revision_delete-2.1.0-rc1-release.md)); **unpublished** nodes vs **bundle class** in preprocess ([`community/unpublished-node-bundle-class-slack.md`](community/unpublished-node-bundle-class-slack.md)); **429** / **Fastly** **rate limit** (**Apr 2026**), **www** vs **new**, **CI** **patches** ([`community/drupalorg-429-fastly-rate-limit-apr2026-slack.md`](community/drupalorg-429-fastly-rate-limit-apr2026-slack.md)); **DDoS** **git**/**WAF**/**Mastodon**/**accounts**/**2FA** ([`community/drupalorg-ddos-waf-git-mastodon-accounts-apr2026-slack.md`](community/drupalorg-ddos-waf-git-mastodon-accounts-apr2026-slack.md)); **malicious traffic** / **edge blocking** vs **AI** narrative, **scale** (**5×–20×**, **residential proxies**), **hobby bot** reassurance (**drumm** / **nnewton**) + [**Hojtsy** blog (Claude Code + d.o.)](https://www.hojtsy.hu/blog/2026-apr-10/solving-small-drupal-issue-plenty-added-tests-most-basic-claude-code-setup-without) ([`community/drupalorg-malicious-traffic-blocking-slack.md`](community/drupalorg-malicious-traffic-blocking-slack.md)); **seeking maintainer** / **namespace** handover ([`community/drupalorg-seeking-maintainer-namespace-process-slack.md`](community/drupalorg-seeking-maintainer-namespace-process-slack.md)); **`usage_data`** **`www`↔`new`** redirect loop ([`community/drupalorg-usage-data-www-new-redirect-loop-slack.md`](community/drupalorg-usage-data-www-new-redirect-loop-slack.md)); **`#ai`** **CWG** / **Community Health** reminder ([`community/drupal-slack-ai-channel-cwg-health-reminder.md`](community/drupal-slack-ai-channel-cwg-health-reminder.md)); **DrupalCon** / **GitHub** feedback → **`#support`** (**Jeremy Chinquist**) ([`community/drupalcon-github-feedback-channel-support-slack.md`](community/drupalcon-github-feedback-channel-support-slack.md)); **core** **child issues** [**#3529510**](https://www.drupal.org/project/drupal/issues/3529510), **`@see`** spacing [**#3578091**](https://www.drupal.org/project/drupal/issues/3578091), **autowire** map [**#3578361**](https://www.drupal.org/project/drupal/issues/3578361) / [**#3295751**](https://www.drupal.org/project/drupal/issues/3295751), **`contact_storage`** attributes vs uninstall [**#3039906**](https://www.drupal.org/project/contact_storage/issues/3039906) ([`community/drupal-core-child-issues-see-docblock-autowire-contact-storage-slack.md`](community/drupal-core-child-issues-see-docblock-autowire-contact-storage-slack.md)).
 
 Each numbered file is written to be **paste-ready** after project-specific edits.
 
@@ -82,18 +87,24 @@ Each numbered file is written to be **paste-ready** after project-specific edits
 |------|--------|
 | [`community/cloudflare-cache-purge-drupal-modules-slack.md`](community/cloudflare-cache-purge-drupal-modules-slack.md) | **Cloudflare** cache purge: **cloudflare** vs **purge** + **cloudflare_purge**; SDK meta [**#3572890**](https://www.drupal.org/project/cloudflare/issues/3572890) / [**#3362051**](https://www.drupal.org/project/cloudflare/issues/3362051) |
 | [`community/civicrm_entity-3580224-review-nudge-slack.md`](community/civicrm_entity-3580224-review-nudge-slack.md) | **civicrm_entity** **#3580224** (multilingual **Views** autocomplete); **MR !11** / **GitHub #546**; **`QueryHooks.php`** |
+| [`community/cdxgen-drupal-dependency-track-sbom.md`](community/cdxgen-drupal-dependency-track-sbom.md) | **cdxgen** / **CycloneDX** SBOM for **Drupal 10** (Composer **`composer.lock`**); **Dependency-Track** upload; **invalid schema** → **`--spec-version`** (**1.6** default vs server **1.4**/**1.5**), local **cyclonedx-cli** validate |
+| [`community/drupalorg-429-fastly-rate-limit-apr2026-slack.md`](community/drupalorg-429-fastly-rate-limit-apr2026-slack.md) | **14 Apr 2026** — **429** / **54113**, **Varnish** (**HEL**); **Fastly** **rate limiting** (**Antti**); **www** vs **new**; **CI** **patch** URLs; **dimitriskr**: service **back** |
+| [`community/drupalorg-ddos-waf-git-mastodon-accounts-apr2026-slack.md`](community/drupalorg-ddos-waf-git-mastodon-accounts-apr2026-slack.md) | **Apr 2026** — **git** hook **declined**; **5xx** waves + **WAF**; **nnewton** **proxies**; **@drupalinfra** **cache**/**accounts**; **2FA** UX (**drumm**); **issue fork** **`main`** (**stBorchert**) |
 | [`community/drupalorg-release-series-supported-slack.md`](community/drupalorg-release-series-supported-slack.md) | **Supported** vs **`-dev`** / beta, **`2.0.*`** series label, [project #3436596](https://www.drupal.org/project/project/issues/3436596)—**drumm** / **penyaskito** |
 | [`community/drupalorg-seeking-maintainer-namespace-process-slack.md`](community/drupalorg-seeking-maintainer-namespace-process-slack.md) | **Seeking maintainer**: **no fast track**; **contact** + **wait** (**~2 weeks** in chat, **verify**); **takeover** friction; **[annotations](https://www.drupal.org/project/annotations)** |
+| [`community/drupalorg-software-page-new-drupalorg-3584626-slack.md`](community/drupalorg-software-page-new-drupalorg-3584626-slack.md) | **new.drupal.org** stack on **logged-out** UI — **OK to post socially?** **dww** → **[Software](https://www.drupal.org/drupalorg/software)**; **fjgarlin** [**#3584626**](https://www.drupal.org/project/drupalorg/issues/3584626) refresh + **new** stack; **5xx**/**DDoS** thread — **mxr576**: **Mastodon** updates |
 | [`community/drupalorg-usage-data-www-new-redirect-loop-slack.md`](community/drupalorg-usage-data-www-new-redirect-loop-slack.md) | **[usage_data](https://www.drupal.org/project/usage_data)**: **redirect loop** **www**↔**new**; **automation** interstitial in **incognito**; **drumm** **fixed**; **[new usage URL](https://new.drupal.org/project/usage/usage_data)** |
 | [`community/dxpr-builder-28-ai-release.md`](community/dxpr-builder-28-ai-release.md) | DXPR Builder **2.8** — AI + layout; summary for newsletters, Slack, or events |
 | [`community/em-dash-cms-chat.md`](community/em-dash-cms-chat.md) | Lightweight chat capture (naming, April 1 context)—**not** a product review |
 | [`community/gha-ubuntu-chrome-behat-shmem-psa.md`](community/gha-ubuntu-chrome-behat-shmem-psa.md) | **GHA** Ubuntu **24.04** image bump (**Apr 2026**): **Chrome** / **Behat** failures; **`/dev/shm`**; **`--disable-dev-shm-usage`** or **`ubuntu-22.04`** |
 | [`community/laravel-boost-drupal-ecosystem-slack.md`](community/laravel-boost-drupal-ecosystem-slack.md) | **Laravel Boost** praise, **Surge**, **ai_best_practices**, [AI Initiative #3541110](https://www.drupal.org/project/ai_initiative/issues/3541110)—fragmentation → puzzle pieces |
 | [`community/mega-menu-nav-headings-a11y-slack.md`](community/mega-menu-nav-headings-a11y-slack.md) | **Mega menu**: **`h2`/`h3` in `<nav>`** — semantic headings vs “no **`h*`** outside **`<main>`**”; **MDN `<nav>`** example; avoid **`div`**-only “headings” (chat) |
+| [`community/node_revision_delete-2.1.0-rc1-release.md`](community/node_revision_delete-2.1.0-rc1-release.md) | **node_revision_delete** **2.1.0-rc1** — **translation**-safe deletes, **entity query** perf in queue/batch, more **tests**; maintainer **FYI** |
 | [`community/opentelemetry-1.0.0-beta7-release-context.md`](community/opentelemetry-1.0.0-beta7-release-context.md) | **OpenTelemetry** beta release — protobuf upgrade, CI unblock, log-format caveat |
 | [`community/same_page_preview-d11-2.1-3.0-slack.md`](community/same_page_preview-d11-2.1-3.0-slack.md) | **same_page_preview**: **D11** dropped from **2.1.x**; **3.0.0-beta1** vs **2.1.5** / **`^10.1`**; merge-up **#3461334** |
 | [`community/unpublished-node-bundle-class-slack.md`](community/unpublished-node-bundle-class-slack.md) | **`preprocess_node`** / route **`node`**: not **bundle class** — **unpublished** content; **`hook_entity_bundle_info_alter`** OK; not a **recent core** change (chat) |
 | [`community/drupalorg-malicious-traffic-blocking-slack.md`](community/drupalorg-malicious-traffic-blocking-slack.md) | **Drupal.org** **flood** / **WAF**-style blocking (**red** blocked, **green** allowed); **nnewton**: **not AI scraping**, **malicious**, **~5×–20×** normal via **residential-proxy DDoS**; **drumm**: **not** **hobby bot** traffic without **paid proxy** mesh; [**Hojtsy** post](https://www.hojtsy.hu/blog/2026-apr-10/solving-small-drupal-issue-plenty-added-tests-most-basic-claude-code-setup-without); **Fastly** vs **Cloudflare** challenge (chat) |
+| [`community/drupalcon-github-feedback-channel-support-slack.md`](community/drupalcon-github-feedback-channel-support-slack.md) | **DrupalCon** “qualifies?” + **GitHub** feedback — wrong channel; **Jeremy Chinquist** → **`#support`**; **sponsor** stage vs **BoF**; [**actoolsDrupal**](https://github.com/actools-pl/actoolsDrupal) |
 | [`community/drupal-core-child-issues-see-docblock-autowire-contact-storage-slack.md`](community/drupal-core-child-issues-see-docblock-autowire-contact-storage-slack.md) | **smustgrave**: hold **child issues** for [**#3529510**](https://www.drupal.org/project/drupal/issues/3529510); **`@see`** [**#3578091**](https://www.drupal.org/project/drupal/issues/3578091) — **quietone**: **Twig** standards, not new **coding_standards** issue; **autowire** [**#3578361**](https://www.drupal.org/project/drupal/issues/3578361) + [**#3295751**](https://www.drupal.org/project/drupal/issues/3295751) / [**#3578374**](https://www.drupal.org/project/drupal/issues/3578374); **`contact_storage`** [**#3039906**](https://www.drupal.org/project/contact_storage/issues/3039906) — **berdir**: **uninstall validator** vs **deprecation** noise |
 | [`community/drupal-slack-ai-channel-cwg-health-reminder.md`](community/drupal-slack-ai-channel-cwg-health-reminder.md) | **`#ai`** thread: **external video** → **escalation**; **AmyJune** (**CWG** / **Community Health**); **[Values & Principles](https://www.drupal.org/about/values-and-principles#seek-first-to-understand-then-to-be-understood)** |
 
@@ -106,6 +117,8 @@ Screenshots for select notes live under [`assets/`](assets/).
 ## Example snippets
 
 Illustrative only—adapt names, versions, and Selenium endpoints to your project. For **Chrome** / **`/dev/shm`** on hosted runners, see [`community/gha-ubuntu-chrome-behat-shmem-psa.md`](community/gha-ubuntu-chrome-behat-shmem-psa.md).
+
+The blocks below map to **numbered issues** in [`issues/`](issues/) and a few [`community/`](community/) notes so you can jump from narrative to code.
 
 ### GitHub Actions — pin Ubuntu 22.04 on the job
 
@@ -147,6 +160,176 @@ type: module
 description: 'Illustrative core_version_requirement only.'
 package: Custom
 core_version_requirement: ^10.3 || ^11
+```
+
+### List entity cache tags — don’t grep only for `node_list` ([`issues/13`](issues/13-entity-list-cache-tags-core-invalidation.md))
+
+**List** tags are built as **`{entity_type_id}_list`** (and bundle variants). Use **`EntityTypeInterface`** instead of assuming a literal **`node_list`** string. Invalidation on save runs through **`EntityBase::postSave()`**—see the issue note for pointers.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Drupal\Core\Entity\EntityTypeInterface;
+
+/** @var \Drupal\Core\Entity\EntityTypeManagerInterface $etm */
+$etm = \Drupal::entityTypeManager();
+$node_type = $etm->getDefinition('node');
+assert($node_type instanceof EntityTypeInterface);
+// Dynamic list tags for this entity type (e.g. ['node_list']).
+$list_tags = $node_type->getListCacheTags();
+// When debugging invalidation, start at EntityBase::postSave(), not a hard-coded tag string.
+// Avoid ad-hoc Cache::invalidateTags($list_tags) unless you own the invalidation contract.
+```
+
+### Autowired route controller — optional `create()` ([`issues/14`](issues/14-drupal-core-controller-autowiring.md))
+
+Align with the change record [**Controllers can be autowired…**](https://www.drupal.org/node/3395716) and your module’s routing. Constructor type-hints resolve from the container when the controller is registered as a service with **`autowire: true`**.
+
+`my_module.services.yml`:
+
+```yaml
+services:
+  my_module.example_controller:
+    class: Drupal\my_module\Controller\ExampleController
+    autowire: true
+```
+
+`my_module.routing.yml`:
+
+```yaml
+my_module.example:
+  path: '/my-module/example'
+  defaults:
+    _title: 'Example'
+    _controller: 'my_module.example_controller:build'
+  requirements:
+    _permission: 'access content'
+```
+
+`src/Controller/ExampleController.php` (constructor only—no `create()` when autowiring covers it):
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace Drupal\my_module\Controller;
+
+use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Datetime\DateFormatterInterface;
+
+final class ExampleController extends ControllerBase {
+
+  public function __construct(
+    protected DateFormatterInterface $dateFormatter,
+  ) {}
+
+  public function build(): array {
+    return ['#markup' => $this->t('Illustrative autowired controller.')];
+  }
+
+}
+```
+
+### Search API — tenant filter in `QUERY_PRE_EXECUTE` ([`issues/16`](issues/16-ai-rag-multi-tenancy-search-api-ragtool-3584010.md))
+
+**Server-side** conditions belong here (e.g. **`client_id`**)—not only in whatever the LLM sends to **RagTool**. Requires **search_api**; class names match the **`search_api`** module.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace Drupal\my_module\EventSubscriber;
+
+use Drupal\search_api\Event\QueryPreExecuteEvent;
+use Drupal\search_api\Event\SearchApiEvents;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+
+final class TenantSearchApiSubscriber implements EventSubscriberInterface {
+
+  public static function getSubscribedEvents(): array {
+    return [
+      SearchApiEvents::QUERY_PRE_EXECUTE => 'onQueryPreExecute',
+    ];
+  }
+
+  public function onQueryPreExecute(QueryPreExecuteEvent $event): void {
+    $query = $event->getQuery();
+    // $allowed = … derive from current user / request, never trust model output alone.
+    // $query->addCondition('client_id', $allowed);
+  }
+
+}
+```
+
+Register in **`my_module.services.yml`** with `tags: - { name: event_subscriber }`.
+
+### Sync fork refs + rebase issue branch ([`issues/20`](issues/20-drupal-core-3092424-proxybuilder-fork-main-rebase.md))
+
+When **GitLab** says **`invalid reference name 'main'`** (or your integration branch is missing on the fork), push the **canonical** ref to **`origin`**, then **rebase**. Replace **`11.x`** / **`main`** with whatever **`git ls-remote https://git.drupalcode.org/project/drupal.git`** shows.
+
+```bash
+git remote add drupal https://git.drupalcode.org/project/drupal.git 2>/dev/null || true
+git fetch drupal
+git push origin drupal/11.x:11.x
+git checkout my-issue-branch
+git rebase 11.x
+git push --force-with-lease origin HEAD
+```
+
+### Image field **alt** / **title** (Scanner [#3584902](https://www.drupal.org/project/scanner/issues/3584902) — [`issues/21`](issues/21-scanner-3584902-image-field-alt-title-search.md))
+
+Illustrates the subfields **Scanner** aims to include in search/replace flows:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Drupal\node\NodeInterface;
+
+function mymodule_collect_image_text(NodeInterface $node, string $field_name): array {
+  $out = [];
+  if (!$node->hasField($field_name) || $node->get($field_name)->isEmpty()) {
+    return $out;
+  }
+  foreach ($node->get($field_name) as $item) {
+    $out[] = [
+      'alt' => (string) ($item->alt ?? ''),
+      'title' => (string) ($item->title ?? ''),
+    ];
+  }
+  return $out;
+}
+```
+
+### Unpublished nodes vs bundle class expectations ([`community/unpublished-node-bundle-class-slack.md`](community/unpublished-node-bundle-class-slack.md))
+
+When debugging **`getParameter('node')`** or **`$variables['node']`** type, compare **published** vs **unpublished** before assuming **`hook_entity_bundle_info_alter()`** failed:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+$node = \Drupal::routeMatch()->getParameter('node');
+if ($node instanceof \Drupal\node\NodeInterface) {
+  $bundle_class = $node::class;
+  $published = $node->isPublished();
+  // If behaviour differs only when !$published, see the community note above.
+}
+```
+
+### CycloneDX SBOM with **cdxgen** ([`community/cdxgen-drupal-dependency-track-sbom.md`](community/cdxgen-drupal-dependency-track-sbom.md))
+
+From the **Composer project root**; **`--spec-version 1.5`** (or **`1.4`**) avoids **Dependency-Track** schema errors when the server does not accept **1.6** yet.
+
+```bash
+cd /path/to/drupal-project
+npx --yes @cyclonedx/cdxgen@latest -r -o bom.json --spec-version 1.5 .
 ```
 
 ---
