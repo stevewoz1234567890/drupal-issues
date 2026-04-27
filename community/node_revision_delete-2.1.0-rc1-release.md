@@ -15,3 +15,5 @@ People involved with **node_revision_delete** were pointed at a new **release ca
 ## Use
 
 Newsletters, Slack, upgrade notes, or “should we test this on staging?” threads—**not** a Drupal.org issue template (see [`issues/`](../issues/) for queue drafts).
+
+**Follow-on (update path):** missing **`verbose_log`** after **1.x** **→** **2.x** **upgrades** and **strict** **defaults** — [**#3586636**](https://www.drupal.org/project/node_revision_delete/issues/3586636), **2.1.1** **cast** (Slack) — see [`node_revision_delete-3586636-verbose-log-bool-slack.md`](node_revision_delete-3586636-verbose-log-bool-slack.md).
